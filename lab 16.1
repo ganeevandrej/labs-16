@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+ 
+int main()
+{
+    int N, i;
+     cin >> N;
+    int a[5];
+    a[0] = 1;
+    for (i = 1; i < N; i++)
+        a[i] = a[i - 1] + 2;
+    for (i = 1; i < N; i++)
+        cout << a[i] << endl;
+    return 0; 
+}
